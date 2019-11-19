@@ -1,12 +1,12 @@
-var topics = ['gay', 'women', 'cars', 'motorbie'];
+var topics = ['musicians', 'colleges', 'dancing', 'icecream'];
 
 
 var userTag = document.querySelector('#myTag').value;
- var queryURL = `https://api.giphy.com/v1/gifs/trending?api_key=${oAPKq0ycl46LlXlQ6CpSi5k9jK2cPOqB}&q=${userTag}`;
+ var queryURL = `https://api.giphy.com/v1/gifs/trending?api_key=${5hKfWAgGdNcwKjeXRXMbjCfM2SZrc47S}&q=${userTag}`;
 =
 $("#gifBTN").on("click", function () {
   event.preventDefault();
-  var myKey = 'oAPKq0ycl46LlXlQ6CpSi5k9jK2cPOqB';
+  var myKey = '5hKfWAgGdNcwKjeXRXMbjCfM2SZrc47S;
   // var userTag = 'dogs';
   var userTag = document.querySelector('#myTag').value;
   var queryURL = `https://api.giphy.com/v1/gifs/random?api_key=${myKey}&tag=${userTag}`;
