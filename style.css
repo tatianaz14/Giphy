@@ -1,15 +1,94 @@
-body {
-    background: rgb(76,69,191);
-background: linear-gradient(90deg, rgba(76,69,191,1) 0%, rgba(218,75,194,1) 35%, rgba(0,212,255,1) 98%);
+@font-face {
+    font-family: 'gt_walsheim_trialbold';
+    src: url("./fonts/gt-walsheim-pro-trial-bold-webfont.woff2") format("woff2"), url("./fonts/gt-walsheim-pro-trial-bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal; }
+  /* HTML */
+  * {
+    box-sizing: border-box;
+    box-shadow: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #1CFF1B,#FF5128, #9422E8, #1EC0FF);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite; }
+  
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0% 50%; }
+    50% {
+      background-position: 100% 50%; }
+    100% {
+      background-position: 0% 50%; } }
+  button {
+    cursor: pointer; }
+  
+  h1 {
+    
+color:white; }
+  
+
+header, #gif-buttons {
+    margin-bottom: 1%;
 }
-h1{
-color: rgba(248,80,50,1);
-color: -moz-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
-color: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,80,50,1)), color-stop(50%, rgba(241,111,92,1)), color-stop(51%, rgba(246,41,12,1)), color-stop(71%, rgba(240,47,23,1)), color-stop(100%, rgba(231,56,39,1)));
-color: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
-color: -o-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
-color: -ms-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
-color: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827', GradientType=1 );
-    background-color:black;
+
+
+
+#add-gif {
+    background-color: #eba23c;
+    cursor: pointer;
+    border-color:white;
+}
+
+.giphy {
+    cursor: pointer;
+}
+
+.gif {
+    cursor: pointer;
+}
+
+p {
+    text-transform: uppercase;
+    padding-left: 1%;
+}
+
+.giphy {
+    margin-right: 1%;
+    margin-bottom: 1%;
+    border-color:white;
+    background: white;
+    color:purple;
+}
+.gifDiv {
+    margin-right: 1%;
+}
+
+.rating{
+    
+    color: white;
+}
+
+
+/*
+These rules take effect when the browser's width
+is either 768px or less.
+*/
+
+@media screen and (max-width: 768px) {
+
+.gif {
+    width: 100%;
+}
+
+#add-gif {
+    margin-left: 15px;
+}
+
 }
