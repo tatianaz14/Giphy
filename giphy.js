@@ -59,7 +59,7 @@ function renderButtons() {
 
     for (var i = 0; i < topics.length; i++) {
         var gifButton = $("<button>");
-        gifButton.attr("type", "button").attr("class", "btn btn-dark giphy").text(topics[i]).attr("data-giphy", topics[i]).attr("id", "gif-button");
+        gifButton.attr("type", "button").attr("class", "btn btn-primary giphy").text(topics[i]).attr("data-giphy", topics[i]).attr("id", "gif-button");
         $("#gif-buttons").append(gifButton);
     }
 }
